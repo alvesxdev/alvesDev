@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from 'react'
 
 import './Header.css'
 import ImgBrand from '../../assets/Brand.png'
-import MenuBurguer from '../../assets/menu-burguer.svg'
-import MenuClose from '../../assets/menu-close.svg'
+import MenuBurguer from '../../assets/menuburguer/menu-burguer.svg'
+import MenuClose from '../../assets/menuburguer/menu-close.svg'
 
-export default () => {
+const Header = () => {
   const [blackHeader, setBlackHeader] = useState(true)
   const [menu, setMenu] = useState(false)
 
@@ -22,21 +22,12 @@ export default () => {
       }
     }
 
-    // 1520
-
     window.addEventListener('scroll', scrollListener)
 
     return () => {
       window.removeEventListener('scroll', scrollListener)
     }
   }, [])
-
-  // FUNCTION SCROLL
-
-  // window.ScrollToIdClick = (event) => {
-  //   // const {offsetTop} = inputElement.current
-  //   window.scroll(0, offsetTop)
-  // }
 
   return (
     <header className={blackHeader ? 'black' : ''}>
@@ -73,3 +64,5 @@ export default () => {
     </header>
   )
 }
+
+export default Header

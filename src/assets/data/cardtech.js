@@ -5,6 +5,7 @@ import SvgReactjs from '../svg-skills/reactjs.svg'
 import SvgVisual from '../svg-skills/visual.svg'
 import SvgFigma from '../svg-skills/figma.svg'
 import SvgGitHubSkills from '../svg-skills/git.svg'
+import SvgPhotoshop from '../svg-skills/photshop.svg'
 
 const Techs = [
   {
@@ -34,6 +35,10 @@ const Techs = [
   {
     src: SvgGitHubSkills,
     name: 'Git/GitHub',
+  },
+  {
+    src: SvgPhotoshop,
+    name: 'Photoshop',
   },
 ]
 

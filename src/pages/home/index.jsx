@@ -1,12 +1,12 @@
 import React, { useRef } from 'react'
 import './Home.css'
 import './media-home.css'
-import SvgLinkedin from '../../assets/btn-linkedin.svg'
-import SvgGit from '../../assets/btn-git.svg'
+import SvgLinkedin from '../../assets/svg-button-main/btn-linkedin.svg'
+import SvgGit from '../../assets/svg-button-main/btn-git.svg'
 import ImgPainels from '../../assets/painels.png'
 import CircleBg from '../../components/circles'
 
-export default () => {
+const Home = () => {
   return (
     <>
       <CircleBg />
@@ -56,3 +56,5 @@ export default () => {
     </>
   )
 }
+
+export default Home
