@@ -1,9 +1,9 @@
-import React from "react";
-import "./Skills.css";
-import CircleBg from "../../components/circles";
-import Techs from "../../assets/data/cardtech";
+import React from 'react'
+import './Skills.css'
+import CircleBg from '../../components/circles'
+import Techs from '../../assets/data/cardtech'
 
-export default () => {
+const Skills = () => {
   return (
     <>
       <CircleBg />
@@ -11,9 +11,9 @@ export default () => {
         <div className="content--skills">
           <h1 className="title--skills">Habilidades</h1>
           <div className="content--cards-skills">
-            {Techs.map(({name, src}) => {
-             return (
-              <div className="card--skills">
+            {Techs.map(({ name, src }) => {
+              return (
+                <div className="card--skills" key={name}>
                   <div className="img--card-skills">
                     <img src={src} alt="Icone HTML" />
                   </div>
@@ -25,5 +25,7 @@ export default () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
+
+export default Skills
