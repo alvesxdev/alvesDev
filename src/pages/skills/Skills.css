@@ -1,0 +1,78 @@
+.section--skills {
+    width: 100%;
+    min-height: 75vh;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.content--skills {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 45px;
+    padding-bottom: 60px;
+}
+
+.title--skills {
+    font-size: 3rem;
+    margin-top: 55px;
+    text-align: center;
+}
+
+.content--cards-skills, 
+.card--skills,
+.img--card-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content--cards-skills {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.card--skills {
+    max-width: 160px;
+    flex-direction: column;
+}
+
+.card--skills p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.img--card-skills {
+    width: 120px;
+    height: 120px;
+    background-color: var(--color-card);
+    border-radius: 25px;
+    transition: .6s;
+    cursor: pointer;
+
+}
+
+.img--card-skills:hover {
+    background-color: #142f6b;
+}
+
+.img--card-skills span {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.img--card-skills img {
+    width: 60%;
+}
+
+.img--card-skills #figmaLogo {
+    width: 40%;
+}

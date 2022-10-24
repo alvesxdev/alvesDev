@@ -1,0 +1,43 @@
+@media(min-width: 670px) {
+    .img--about {
+        width: 70%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .img--about {
+        width: 60%;
+    }
+}
+
+@media(min-width: 1280px) {
+    .section--about {
+        height: 90vh;
+    }
+    .content--section-about {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 85%;
+    }
+
+    .text--section-about {
+        width: 50%;
+        margin: auto 0;
+    }
+
+    .img--about {
+        width: 35%;
+        display: flex;
+        
+    }
+
+    .description--about {
+        font-size: 1.1rem;
+    }
+}
+
+@media(min-width: 1440px) {
+    .content--section-about {
+        max-width: 1440px;
+    }
+}

@@ -1,0 +1,14 @@
+.circle--page {
+    width: 300px;
+}
+
+.circle--page img {
+    width: 100%;
+}
+
+
+@media(min-width: 1280px) {
+    .circle--page {
+        width: 400px;
+    }
+}

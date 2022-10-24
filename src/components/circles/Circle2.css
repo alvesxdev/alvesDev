@@ -1,0 +1,86 @@
+.container--circles {
+    width: 100%;
+    height:100vh;
+    position: absolute;
+    filter: blur(35px);
+    object-fit: cover;
+    opacity: .5;
+    overflow-x: hidden;
+    z-index: -100;
+
+
+}
+
+
+.circle---1 {
+    right: -10%;
+    top: 0;
+    position: absolute;
+    -webkit-animation: vibrate-1 25s linear infinite both;
+	        animation: vibrate-1 25s linear infinite both;
+}
+
+.circle---2 {
+    position: absolute;
+    left: -20%;
+    top: 35%;
+    -webkit-animation: vibrate-1 25s linear infinite both;
+	        animation: vibrate-1 25s linear infinite both;
+}
+
+.circle---3 {
+    position: absolute;
+    right: -26%;
+    top: 45%;
+    -webkit-animation: vibrate-1 25s linear infinite both;
+	        animation: vibrate-1 25s linear infinite both;
+}
+
+@-webkit-keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-50px, 50px);
+              transform: translate(-50px, 50px);
+    }
+    40% {
+      -webkit-transform: translate(-80px, -80px);
+              transform: translate(-80px, -80px);
+    }
+    60% {
+      -webkit-transform: translate(100px, 100px);
+              transform: translate(100px, 100px);
+    }
+    80% {
+      -webkit-transform: translate(120px, -120px);
+              transform: translate(120px, -120px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+
+  @media(min-width: 1280px) {
+    .container--circles {
+      width: 90%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .circle---1 {
+      right: 10%;
+    }
+
+    .circle---2 {
+      left: 0;
+  }
+
+  .circle---3 {
+      right: 0;
+  }
+}
+
+

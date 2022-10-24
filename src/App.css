@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--bg-color);
+    background-image: url(./assets/circles/granulado-bg.png);
+    background-size: 100% auto;
+    font-family: var(--font-p);
+    color: var(--color-fonts);
+    min-width: 375px;
+}
+
+::-webkit-scrollbar {
+    background-color: rgba(255, 255, 255, 0.133);
+    width: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.123);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue--color);
+    border-radius: 50px;
+}
+
+:root {
+    /* // FONT SITE // */
+
+    --font-p: 'Poppins';
+
+    /* // PALLETS COLORS // */
+
+    --bg-color: #0c1323;
+    --white-color: #0C1323;
+    --blue--color: #1453FF;
+    --color-fonts: #ffff;
+
+    /* // COLORS CARDS TECHS // */
+
+    --color-card: #11192D;
+
+    /* // COLORS CIRCLES BACKGROUND // */
+
+    --circle-1: #61BDFF;
+    --circle-2: #1453FF;
+    --circle-3: #0094FF;
+
+
+}
+

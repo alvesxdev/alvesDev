@@ -1,0 +1,84 @@
+.section--main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.containner--main {
+    width: 80%;
+    margin: auto;
+    margin-top: 8rem;
+}
+
+.content--text-main {
+    width: 100%;
+    margin: auto;
+}
+
+.title--main {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.title--main span {
+    color: var(--blue--color);
+}
+
+.buttons--main {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    gap: 35px;
+}
+
+.buttons--main-linkedin,
+.buttons--main-git {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 5px 8px;
+    gap: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons--main-linkedin {
+    background-color: var(--blue--color);
+    transition: all .5s;
+}
+
+.buttons--main-linkedin:hover {
+    transform: scale(1.1);
+}
+
+.buttons--main-git {
+    border: 2px solid #ffff;
+    transition: all .6s;
+}
+
+.buttons--main-git:hover {
+    background-color: var(--blue--color);
+    transform: scale(1.1);
+}
+
+.buttons--main-linkedin img {
+    width: 25px;
+}
+
+.buttons--main-linkedin a,
+.buttons--main-git a {
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--color-fonts);
+    font-size: 1rem;
+}
+
+.img--main {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.img--main img {
+    width: 100%;
+}
