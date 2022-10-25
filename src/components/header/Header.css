@@ -135,10 +135,18 @@ header.black {
     display: none;
 }
 
+@media(max-width: 500px) {
+    .img--header {
+        width: 170px;
+        margin-top: 10px;
+    }
+}
+
 @media(min-width: 1280px) {
     .content--header {
         width: 70%;
     }
+
     
     .content--header nav{
         display: block;

@@ -22,7 +22,7 @@
     width: 100%;
     display: flex;
     margin-top: 30px;
-    gap: 35px;
+    gap: 15px;
 }
 
 .buttons--main-linkedin,
@@ -48,6 +48,7 @@
 .buttons--main-git {
     border: 2px solid #ffff;
     transition: all .6s;
+    padding: 5px 10px;
 }
 
 .buttons--main-git:hover {

@@ -97,3 +97,10 @@
     }
 }
 
+@media(min-width: 1660px) {
+    .title--main {
+        font-size: 3.8rem;
+        width: 100%;
+    }
+}
+
