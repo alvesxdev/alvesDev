@@ -4,7 +4,7 @@ import PainelMe from '../../assets/painel-img-me.png'
 import CircleBg from '../../components/circles'
 import './media-about.css'
 
-export default () => {
+const About = () => {
   return (
     <>
       <CircleBg />
@@ -30,3 +30,5 @@ export default () => {
     </>
   )
 }
+
+export default About
