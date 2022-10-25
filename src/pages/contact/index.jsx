@@ -4,6 +4,7 @@ import SvgBehance from '../../assets/svgs-contact/behance.svg'
 import SvgGit from '../../assets/svgs-contact/gitsvg.svg'
 import SvgLinke from '../../assets/svgs-contact/linkedinsvg.svg'
 import Svgemail from '../../assets/svgs-contact/svgemail.svg'
+import CircleBg from '../../components/circles'
 
 const cardContact = [
   {
@@ -30,28 +31,31 @@ const cardContact = [
 
 const Contact = () => {
   return (
-    <section className="section--contact">
-      <div className="content--contact">
-        <div className="container--contact">
-          <h3>
-            &lt;<span>h2</span>&gt;Contact&lt;/<span>h2</span>&gt;
-          </h3>
-          <h4>My Social Stuff</h4>
-          <ul>
-            {cardContact.map(({ src, link, id }) => {
-              return (
-                <li key={id}>
-                  <a href={link} target="_blank" rel="noreferrer">
-                    <img src={src} alt="" />
-                  </a>
-                </li>
-              )
-            })}
-          </ul>
-          <img src={PainelContact} alt="Painel de contato" />
+    <>
+      <CircleBg />
+      <section className="section--contact" id="Contact">
+        <div className="content--contact">
+          <div className="container--contact">
+            <h3>
+              &lt;<span>h2</span>&gt;Contact&lt;/<span>h2</span>&gt;
+            </h3>
+            <h4>My Social Stuff</h4>
+            <ul>
+              {cardContact.map(({ src, link, id }) => {
+                return (
+                  <li key={id}>
+                    <a href={link} target="_blank" rel="noreferrer">
+                      <img src={src} alt="" />
+                    </a>
+                  </li>
+                )
+              })}
+            </ul>
+            <img src={PainelContact} alt="Painel de contato" />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './Projects.css'
 import cards from '../../assets/data/slidesprojects'
+import CircleBg from '../../components/circles'
 
 const Projects = () => {
   const [index, setIndex] = useState(0)
@@ -21,6 +22,7 @@ const Projects = () => {
 
   return (
     <>
+      <CircleBg />
       <section className="section--projects" id="Projects">
         <div className="carousel--projects" ref={sla}>
           <h1 className="title--projects">Projects</h1>
