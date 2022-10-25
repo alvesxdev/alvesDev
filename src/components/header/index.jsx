@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-
 import './Header.css'
 import ImgBrand from '../../assets/Brand.png'
 import MenuBurguer from '../../assets/menuburguer/menu-burguer.svg'
 import MenuClose from '../../assets/menuburguer/menu-close.svg'
+import itemsMenu from '../../assets/data/itemsmenu'
 
 const Header = () => {
   const [blackHeader, setBlackHeader] = useState(true)
@@ -46,21 +46,13 @@ const Header = () => {
 
         <nav className={menu ? 'on' : ''}>
           <ul>
-            <li>
-              <a href="#Main">Home</a>
-            </li>
-            <li>
-              <a href="#About">About</a>
-            </li>
-            <li>
-              <a href="#Skills">Skills</a>
-            </li>
-            <li>
-              <a href="#Projects">Projects</a>
-            </li>
-            <li>
-              <a href="#Contact">Contact</a>
-            </li>
+            {itemsMenu.map(({ id, option, href }) => {
+              return (
+                <li key={id}>
+                  <a href={href}>{option}</a>
+                </li>
+              )
+            })}
           </ul>
         </nav>
       </div>

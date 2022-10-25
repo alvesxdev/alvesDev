@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <CircleBg />
-      <section className="section--main" id="Main">
+      <section className="section--main" id="Home">
         <div className="containner--main">
           <div className="content--text-main">
             <div className="text--main">

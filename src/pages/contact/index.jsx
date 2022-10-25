@@ -30,7 +30,6 @@ const Contact = () => {
 
   return (
     <>
-      <CircleBg />
       <section className="section--contact" id="Contact">
         <div className="content--contact">
           <div
