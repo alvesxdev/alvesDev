@@ -6,11 +6,17 @@ header {
     position: fixed;
     transition: all .7s;
     z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 header.black {
     width: 100%;
     height: 75px;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     position: fixed;

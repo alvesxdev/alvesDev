@@ -1,4 +1,5 @@
 import './Contact.css'
+import './media-contact.css'
 import React, { useState, useEffect } from 'react'
 import PainelContact from '../../assets/painel-contact.png'
 import CircleBg from '../../components/circles'
