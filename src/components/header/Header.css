@@ -108,7 +108,7 @@ header.black {
 }
 
 .content--header nav.on ul a:hover {
-    background-color: var(--blue--color);
+    background-color: rgba(255, 255, 255, 0.162);
     padding: 0 4px;
     border-radius: 8px;
     opacity: .8;
@@ -118,6 +118,7 @@ header.black {
     z-index: 999;
     right: 35px;
     top: 35px;
+    cursor: pointer;
 }
 
 .IconActive {
@@ -125,6 +126,13 @@ header.black {
     right: 35px;
     top: 35px;
     display: block;
+    cursor: pointer;
+
+    transition: .8s;
+}
+
+.IconActive:hover {
+    transform: rotate(180deg)
 }
 
 .IconDisable {
@@ -164,10 +172,9 @@ header.black {
     }
 
     .content--header nav ul a:hover {
-        background-color: var(--blue--color);
+        background-color: rgba(255, 255, 255, 0.162);
         padding: 0 4px;
         border-radius: 8px;
-        opacity: .8;
     }
 
     .IconActive{

@@ -1,41 +1,42 @@
 import './Contact.css'
+import React, { useState, useEffect } from 'react'
 import PainelContact from '../../assets/painel-contact.png'
-import SvgBehance from '../../assets/svgs-contact/behance.svg'
-import SvgGit from '../../assets/svgs-contact/gitsvg.svg'
-import SvgLinke from '../../assets/svgs-contact/linkedinsvg.svg'
-import Svgemail from '../../assets/svgs-contact/svgemail.svg'
 import CircleBg from '../../components/circles'
-
-const cardContact = [
-  {
-    id: 1,
-    src: SvgBehance,
-    link: 'https://www.behance.net/alvesxdev',
-  },
-  {
-    id: 2,
-    src: SvgGit,
-    link: 'https://github.com/alvesxdev',
-  },
-  {
-    id: 3,
-    src: SvgLinke,
-    link: 'https://www.linkedin.com/in/alves-dev-06bb08188/',
-  },
-  {
-    id: 4,
-    src: Svgemail,
-    link: 'mailto:henrryfps@gmail.com',
-  },
-]
+import cardContact from '../../assets/data/iconscontact'
 
 const Contact = () => {
+  const [titleContact, setTitleContact] = useState(true)
+
+  const ToogleMode = () => {
+    setTitleContact(!titleContact)
+  }
+
+  useEffect(() => {
+    const scrollListener = () => {
+      if (window.scrollY > 3000) {
+        setTitleContact(true)
+      } else if (window.scrollY < 2500) {
+        setTitleContact(false)
+      }
+    }
+
+    window.addEventListener('scroll', scrollListener)
+
+    return () => {
+      window.removeEventListener('scroll', scrollListener)
+    }
+  }, [])
+
   return (
     <>
       <CircleBg />
       <section className="section--contact" id="Contact">
         <div className="content--contact">
-          <div className="container--contact">
+          <div
+            className={
+              titleContact ? 'container--contact-active' : 'container--contact'
+            }
+          >
             <h3>
               &lt;<span>h2</span>&gt;Contact&lt;/<span>h2</span>&gt;
             </h3>
