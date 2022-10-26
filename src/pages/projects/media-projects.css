@@ -1,0 +1,5 @@
+@media(max-width: 375px) {
+    .carousel--projects {
+        height: 300px;
+    }
+}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './Projects.css'
+import './media-projects.css'
 import cards from '../../assets/data/slidesprojects'
-import CircleBg from '../../components/circles'
 
 const Projects = () => {
   const [index, setIndex] = useState(0)
@@ -23,8 +23,8 @@ const Projects = () => {
   return (
     <>
       <section className="section--projects" id="Projects">
+        <h1 className="title--projects">Projects</h1>
         <div className="carousel--projects" ref={sla}>
-          <h1 className="title--projects">Projects</h1>
           <div className="content--cards--projects">
             {cards.map((item, i) => {
               const indexLeft = mod(index - 1, cards.length)
