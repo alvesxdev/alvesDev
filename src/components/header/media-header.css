@@ -1,0 +1,50 @@
+@media(max-width: 500px) {
+    .img--header {
+        width: 170px;
+        margin-top: 10px;
+    }
+
+    .icon img {
+        width: 70%;
+    }
+
+    .IconActive img {
+        width: 80%;
+    }
+}
+
+@media(min-width: 1280px) {
+    .content--header {
+        width: 70%;
+    }
+
+    
+    .content--header nav{
+        display: block;
+    }
+
+    .content--header nav ul {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+    }
+
+    .content--header nav ul a {
+        font-size: 1.3rem;
+        transition: .5s;
+    }
+
+    .content--header nav ul a:hover {
+        background-color: rgba(255, 255, 255, 0.162);
+        padding: 0 4px;
+        border-radius: 8px;
+    }
+
+    .IconActive{
+        display: none;
+    }
+
+    .icon {
+        display: none;
+    }
+}

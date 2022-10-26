@@ -54,15 +54,19 @@
 .img--card-skills {
     width: 120px;
     height: 120px;
-    background-color: var(--color-card);
-    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.031);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.087);
+    border-radius: 30px;
     transition: .6s;
     cursor: pointer;
 
 }
 
 .img--card-skills:hover {
-    background-color: #142f6b;
+    background-color: #1a3d8929;
+    transform: scale(1.1) translateY(-10%);
 }
 
 

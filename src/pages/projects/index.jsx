@@ -22,7 +22,6 @@ const Projects = () => {
 
   return (
     <>
-      <CircleBg />
       <section className="section--projects" id="Projects">
         <div className="carousel--projects" ref={sla}>
           <h1 className="title--projects">Projects</h1>

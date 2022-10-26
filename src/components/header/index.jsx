@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Header.css'
+import './media-header.css'
 import ImgBrand from '../../assets/Brand.png'
 import MenuBurguer from '../../assets/menuburguer/menu-burguer.svg'
 import MenuClose from '../../assets/menuburguer/menu-close.svg'
