@@ -15,12 +15,12 @@ const Home = () => {
           <div className="content--text-main">
             <div className="text--main">
               <h1 className="title--main">
-                Olá, eu sou{' '}
+                Hi, I'm{' '}
                 <span>
                   {'{'}Alves{'}'}
                 </span>
                 .<br />
-                Um desenvolvedor
+                A developer
                 <br />
                 Front-end
               </h1>

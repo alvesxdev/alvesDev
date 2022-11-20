@@ -9,7 +9,7 @@ const Skills = () => {
       <CircleBg />
       <section className="section--skills" id="Skills">
         <div className="content--skills">
-          <h1 className="title--skills">Habilidades</h1>
+          <h1 className="title--skills">Skills</h1>
           <div className="content--cards-skills">
             {Techs.map(({ name, src }) => {
               return (

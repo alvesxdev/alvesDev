@@ -11,15 +11,14 @@ const About = () => {
       <section className="section--about" id="About">
         <div className="content--section-about">
           <div className="text--section-about">
-            <h1 className="tittle--about">Sobre mim</h1>
+            <h1 className="tittle--about">About me</h1>
             <h2 className="sub-title--about">Manaus-AM</h2>
             <p className="description--about">
-              Olá, eu me chamo Henry Santos “Alves”, e sou apaixonado por
-              tecnologia desde os meus 12 anos de idade, tive meu primeiro
-              contato com as linguagens de marcação “HTML” e “CSS” em agosto de
-              2022, depois comecei a estudar “ReactJs”, desde então decidi
-              trilhar nesse caminho de Front-end, e aprender mais sobre esse
-              mundo maravilhoso.
+              Hello, my name is Henry Santos “Alves”, and I have been passionate
+              about technology since I was 12 years old, I had my first contact
+              with the “HTML” and “CSS” markup languages ​​in August 2022, then
+              I started to study “ ReactJS”, since then I decided to take this
+              Front-end path, and learn more about this wonderful world.
             </p>
           </div>
           <div className="img--about">
